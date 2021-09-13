@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main () {
+    int x;
+    int y; 
+    int resultado; 
+
+    printf ("Digite o primeiro número: ");
+    printf ("Digite o segundo número: "); 
+
+    scanf (%d, &x);
+    scanf (%d, &y);
+
+    resultado = x + y; 
+
+    scanf (%d, &resultado);
+    printf ("O resultado é: ", resultado);
+    
+}
