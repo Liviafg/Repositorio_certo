@@ -1,3 +1,5 @@
 *.zip
 lib/
 bin/
+target/
+tmp/
