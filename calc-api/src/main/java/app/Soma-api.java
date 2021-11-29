@@ -6,7 +6,7 @@ public class Soma {
 @Path(/soma/{operador1}/{operador2})
 @GET
 
-public String rotaSoma (@PathParamString operador) {
+public String rotaSoma (@PathParamString operador1,@PathParamString operador2) {
     return "Soma";
 }
 public void Soma () {
