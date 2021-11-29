@@ -9,6 +9,8 @@ public class Soma {
 public String rotaSoma (@PathParamString operador1,@PathParamString operador2) {
     return "Soma";
 }
+
+//teste da api de soma
 public void Soma () {
      
     Float.parseFloat (operador1);

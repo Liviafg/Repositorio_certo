@@ -10,6 +10,8 @@ public String rotaSoma (@PathParamString operador1, @PathParamString operador2) 
     return "Soma";
 }
 
+//api soma
+
 public void Soma () {
      
     Float.parseFloat (operador1);
