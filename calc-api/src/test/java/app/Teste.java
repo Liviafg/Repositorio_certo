@@ -1,30 +1,31 @@
-import io.jooby.annotations.*;
-import org.junit.Test;
-import static org.junit.Assert.*;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.BeforeEach;
 
 public class Somateste {
 
-   @Test
-
-public void testSomacomdoiszeros () {
+     Soma soma;
 
     @BeforeEach
 
-    public void SetUp () {
+public void SetUp () { 
 
-    Soma soma = new Soma ();
+       soma = new Soma ();
 
-        System.out.println ("Iniciando teste");
+       System.out.println ("Iniciando teste...");
 
+}
+    @Test
+
+    public void Test_soma_dá_certo () {
+
+        assertEquals(5+2, soma.Soma("7."));
     }
-    
-    float zero = soma.Igualazero();
-
-     assertEquals(soma, soma.Soma("0"));
 
      public void tearDown () {
-         System.out.println ("Teste finalizado");
+
+         System.out.println ("Teste finalizado.");
      }
 
-    }
+    
 }
