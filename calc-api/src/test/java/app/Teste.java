@@ -1,28 +1,30 @@
-package app;
-
 import io.jooby.annotations.*;
+import org.junit.Test;
+import static org.junit.Assert.*;
 
-public class Testesoma {
-@Path(/soma/{operador1}/{operador2})
-@GET
+public class Somateste {
 
-public String rotaSoma (@PathParamString operador1, @PathParamString operador2) {
-    return "Soma";
-}
+   @Test
 
-//api soma
+public void testSomacomdoiszeros () {
 
-public void Soma () {
-     
-    Float.parseFloat (operador1);
-    Float.parseFloat (operador2);
+    @BeforeEach
 
-    float resultado; 
+    public void SetUp () {
 
-    resultado = operador1 + operador2;
-    return operador1;
-    return operador2;
-    return resultado; 
+    Soma soma = new Soma ();
 
-}
+        System.out.println ("Iniciando teste");
+
+    }
+    
+    float zero = soma.Igualazero();
+
+     assertEquals(soma, soma.Soma("0"));
+
+     public void tearDown () {
+         System.out.println ("Teste finalizado");
+     }
+
+    }
 }
