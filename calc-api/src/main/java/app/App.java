@@ -6,7 +6,7 @@ public class App extends Jooby {
 
   {
 
-    mvc(new Controller(/soma/{operador}));
+    mvc(new Controller());
     mvc (new Soma());
   }
 
